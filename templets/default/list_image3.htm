@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-/W3C/DTD XHTML 1.0 Transitional/EN" "http:/www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http:/www.w3.org/1999/xhtml">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="{dede:global.cfg_keywords/}"/>
+<meta name="keywords" content="{dede:global.cfg_keywords/}"/>
+<title>{dede:global.cfg_webname/}</title>
+<link href="/skin/css/public.css" rel="stylesheet" type="text/css" />
+<link href="/skin/css/inside.css" rel="stylesheet" type="text/css" />
+<link href="/skin/css/index1.css" rel="stylesheet" type="text/css" />
+<link href="/skin/css/jiathis_share.css" rel="stylesheet" type="text/css">
+
+
+<script type="text/javascript" src="/skin/js/jquery-1.10.2s.min.js"></script>
+<script src="/skin/js/jquery-ui.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="/skin/js/jquery-1.7.min.js" language="javascript"></script>
+<script type="text/javascript" src="/skin/js/jquery.SuperSlide.js" language="javascript"></script>
+<script type="text/javascript" src="/skin/js/index.js" language="javascript"></script>
+<script src="/skin/js/jquery-rebox.js"></script>
+<script type="text/javascript">
+$(function () {
+	$(".activesss").hover(function () {
+		$(".Locate Menulogo").stop(false, true);
+		$(this).children().next().slideDown("fast"); //slideDown() 函数,实现隐藏,括号里还可以带一个时间参数(毫秒)例如slideDown(2000)以2000毫秒的速度隐藏,还可以带slow,fast                          
+	},
+function () {
+  $(this).children().next().slideUp("fast");
+});
+});
+</script>
+<script type="text/javascript" src="/skin/js/qs_main_products_list.js"></script>
+
+
+</head>
+<body id="zh">
+<!-- wrap -->
+<div class="wrap">
+<!-- header -->
+{dede:include filename="head.htm"/}
+<!-- header end -->
+
+<!-- content -->
+    <!--banner-->
+	{dede:include filename="banner.htm"/}
+	<!--banner end-->
+	<!-- news -->
+	<div class="div_products_bg_info">
+		<div class="div_products_div_info" id="zh_pro" style="opacity: 1; bottom: 0px;">
+			<div class="div_about2" id="zh_pro2" style="opacity: 1; top: 0px;">
+				<div class="div1" id="zh_pro3" style="opacity: 1; left: 0px;"><a href="/indool/gz/">多伦工装系列</a></div>
+				<div class="div2 rg">
+				{dede:channel type='son' typeid='8' currentstyle="<a class='active' href='~typelink~'>| ~typename~</a>"}
+				<a href="[field:typelink/]">| [field:typename/] </a>
+				{/dede:channel}
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="div_pro2">
+				<ul>
+					{dede:list row='20'}
+					<li class="div_li_dong" id="gallery[field:id /]" style="opacity: 1; left: 0px;">
+						<div class="div1">
+						<a href="[field:diyi /]"><img src="[field:litpic /]" width="237" height="213" alt="[field:title/]"></a>
+						</div>
+						
+						<div class="div2">
+						<div class="p1">[field:title/]</div>
+						<div class="p2"></div>
+						<div style="display:none">
+						
+						[field:id function='Getimgs(@me,10)' /]
+						
+			             </div>
+						 </div>
+					</li>
+					{/dede:list}
+					
+					<script>
+								{dede:list row='20'}
+								$('#gallery[field:id /]').rebox({ selector: 'a' });
+								{/dede:list}
+				</script>
+					<div class="clear"></div>
+				</ul>
+				<div class="clear"></div>
+			</div>
+		<div class="pagination-wrapper">
+			<div class="pagination">
+			{dede:pagelist listsize='5' listitem='info,index,end,pre,next,pageno'/}
+			</div>
+		</div>
+		</div>
+	</div>
+	<!-- news end -->
+<!-- content end -->
+      
+    <!-- footer -->
+    {dede:include filename="footer.htm"/}
+    <!-- footer end -->
+</div>
+<!-- wrap end -->
+
+</body>
+</html>

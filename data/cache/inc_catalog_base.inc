@@ -1,0 +1,27 @@
+<?php
+global $cfg_Cs;
+$cfg_Cs=array();
+$cfg_Cs[1]=array(0,2,1,'5pyA5paw57O75YiX');
+$cfg_Cs[2]=array(0,2,1,'57uP5YW457O75YiX');
+$cfg_Cs[3]=array(0,2,1,'5a6k5YaF57O75YiX');
+$cfg_Cs[4]=array(0,2,1,'5bu6562R57O75YiX');
+$cfg_Cs[5]=array(0,1,1,'56m66Ze0576O5a2m');
+$cfg_Cs[6]=array(0,1,1,'5oub5YW15Lmw6ams');
+$cfg_Cs[7]=array(0,1,1,'6IGU57O75oiR5Lus');
+$cfg_Cs[8]=array(3,2,1,'5bel6KOF');
+$cfg_Cs[9]=array(3,2,1,'5a626KOF');
+$cfg_Cs[10]=array(8,2,1,'6YWS5bqX');
+$cfg_Cs[11]=array(8,2,1,'5ZWG5Zy6');
+$cfg_Cs[12]=array(8,2,1,'6ZO26KGM');
+$cfg_Cs[13]=array(8,2,1,'5ZSu5qW85aSE');
+$cfg_Cs[14]=array(8,2,1,'S1RW');
+$cfg_Cs[15]=array(8,2,1,'5Zu+5Lmm6aaG');
+$cfg_Cs[16]=array(8,2,1,'5Ymn6Zmi');
+$cfg_Cs[17]=array(8,2,1,'5Yy755aX');
+$cfg_Cs[18]=array(8,2,1,'5bGV6KeI');
+$cfg_Cs[19]=array(9,2,1,'5qyn5byP');
+$cfg_Cs[20]=array(9,2,1,'55Sw5Zut');
+$cfg_Cs[21]=array(9,2,1,'5Lit5byP');
+$cfg_Cs[22]=array(9,2,1,'546w5Luj');
+$cfg_Cs[23]=array(7,1,1,'5pSv5LuY5pa55byP');
+?>

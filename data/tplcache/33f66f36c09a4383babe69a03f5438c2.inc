@@ -1,0 +1,1 @@
+<a href="[field:typelink /]"><img src="/uploads/image/20150417/1429204607.jpg"  alt="更多"></a>

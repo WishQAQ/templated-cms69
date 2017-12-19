@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-/W3C/DTD XHTML 1.0 Transitional/EN" "http:/www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http:/www.w3.org/1999/xhtml">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="{dede:global.cfg_keywords/}"/>
+<meta name="keywords" content="{dede:global.cfg_keywords/}"/>
+<title>{dede:global.cfg_webname/}</title>
+<link href="/skin/css/public.css" rel="stylesheet" type="text/css" />
+<link href="/skin/css/inside.css" rel="stylesheet" type="text/css" />
+<link href="/skin/css/index1.css" rel="stylesheet" type="text/css" />
+<link href="/skin/css/jiathis_share.css" rel="stylesheet" type="text/css">
+<link href="/skin/css/style.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="/skin/css/jquery.fancybox.css" />
+
+<script src="/skin/js/jquery.js"></script> 
+<script type="text/javascript" src="/skin/js/jquery-1.7.min.js" language="javascript"></script>
+
+<script type="text/javascript" src="/skin/js/index.js" language="javascript"></script>
+<script src="/skin/js/jquery.min.js" ></script>
+<script src="/skin/js/blocksit.min.js" ></script>
+<script type="text/javascript" src="/skin/js/space.js" language="javascript"></script>
+<script type="text/javascript" src="/skin/js/jquery.SuperSlide.js" language="javascript"></script>
+</head>
+<body>
+<!-- wrap -->
+<div class="wrap">
+<!-- header -->
+{dede:include filename="head.htm"/}
+<!-- header end -->
+
+<!-- content -->
+    <!--banner-->
+	{dede:include filename="banner.htm"/}
+	<!--banner end-->
+	<!-- space -->
+	<div class="div_products_bg_info">
+		<div class="div_products_div_info"style="opacity: 1; bottom: 0px;">
+			<div class="div_about2" style="opacity: 1; top: 0px;">
+				<div class="div1" style="opacity: 1; left: 0px;">{dede:field name='typename' /}</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+	</div>
+	
+	<section id="wrapper">
+	<div id="container">
+		
+		{dede:list pagesize ='12'}
+		<div class="grid">
+			<a href="[field:arcurl/]" id="tanchu">
+			<div class="iconq">&nbsp;</div>
+			<div class="imgholder">
+				<img src="[field:litpic function=firstimg('@me')/]" />
+			</div>
+			<strong>[field:title/]</strong>
+			<p>[field:description /]</p>
+			<div class="meta">by [field:writer /]</div>
+			</a>
+		</div>
+		{/dede:list}
+	
+	</div>
+		<div class="pagination-wrapper">
+			<div class="pagination">
+			{dede:pagelist listsize='5' listitem='info,index,end,pre,next,pageno'/}
+			</div>
+		</div>
+	<!-- space end -->
+<!-- content end -->
+      
+    <!-- footer -->
+    {dede:include filename="footer.htm"/}
+    <!-- footer end -->
+
+<!-- wrap end -->
+
+<script type="text/javascript" src="/skin/js/jquery.fancybox.pack.js"></script> 
+<script>
+$("#tanchu").fancybox({
+   autoSize: false, 
+   fitToView: false,
+   width: 600,
+   height: 600,
+    'padding' : 10,
+    'type'  : 'iframe',
+    'wrapCSS' : 'pop1_wp'
+});
+</script>
+</body>
+</html>

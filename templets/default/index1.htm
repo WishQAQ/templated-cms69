@@ -1,0 +1,140 @@
+<!DOCTYPE html PUBLIC "-/W3C/DTD XHTML 1.0 Transitional/EN" "http:/www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http:/www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="{dede:global.cfg_keywords/}"/>
+<meta name="keywords" content="{dede:global.cfg_keywords/}"/>
+<title>{dede:global.cfg_webname/}</title>
+<link href="/skin/css/public1.css" rel="stylesheet" type="text/css" />
+<link href="/skin/css/inside.css" rel="stylesheet" type="text/css" />
+<link href="/skin/css/index.css" rel="stylesheet" type="text/css" />
+<link href="/skin/css/jiathis_share.css" rel="stylesheet" type="text/css">
+<script type="text/javascript">
+    var _bdhmProtocol = (("https:" == document.location.protocol) ? " https:/" : " http:/");
+    document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F9882838709774554d713a921b4a84006' type='text/javascript'%3E%3C/script%3E"));
+</script>
+
+<!--[if IE 6]>
+<script type="text/javascript" src="/skin/js/DD_belatedPNG.js" language="javascript"></script>
+<![endif]-->
+</head>
+<body style="background: #fff;">
+<!-- wrap -->
+<div class="ix_wrap"> 
+  
+  <!-- header -->
+  <div class="ix_header">
+    <div class="ix_logo"> <a href="/"><img src="/skin/images/logo.jpg" /></a> </div>
+    <div class="ix_top">
+      <div class="fr"><a href="/index1.html">中文</a>|<a href="/index1.html">EN </a> </div>
+    </div>
+    <div class="nav">
+      <ul>
+        <li > <a href="/index1.html">作品案例</a> </li>
+        <li> <a href="/want/">主創團隊</a> </li>
+        <li> <a  href="/space/">美學空間</a> </li>
+        <li> <a style=" padding: 0px 19px !important;" href="/contact/">聯系我們</a> </li>
+      </ul>
+    </div>
+  </div>
+  <!-- header end -->
+  
+  <div class="w100F5"> 
+    <!--banner-->
+    
+    <div class="banner">
+      <ul class='bd'>
+        <li><a target="_blank" href='/index1.html' ><img src='/skin/images/cb1.jpg' /></a></li>
+        <li><a target="_blank" href='/index1.html' ><img src='/skin/images/cb2.jpg' /></a></li>
+        <li><a target="_blank" href='/index1.html' ><img src='/skin/images/cb3.jpg' /></a></li>
+      </ul>
+      <ul class='hd'>
+        <li class='png'></li>
+        <li class='png'></li>
+        <li class='png'></li>
+      </ul>
+    </div>
+    
+    <!--banner end--> 
+  </div>
+  
+  <!-- main -->
+  <div class="ix_main"> </div>
+  <!-- main end --> 
+  
+  <!-- footer -->
+  <div class="ix_footer">
+    <div class="ix_bottom">
+      <p class="fl">Copyright © 1998-2015 多倫·高端 三維空間設計. All Rights Reserved | <a target=_blank href="/">POWERED BY TOLLEN</a></p>
+      <p class="share_link"> <a href="javascript:void(0)" style=" margin-left:-5px; margin-top:6px;"><img src="/skin/ico/rss.png" class="png" /></a> 
+        
+        <!-- JiaThis Button BEGIN -->
+      
+      <div class="jiathis_style" style=" width:62px; margin-top:5px;"> <a href="http://e.weibo.com/ccdhk" target="_blank" title="CCD新浪微博"><img src="/skin/ico/sina2.png" class="png fl"></a> <a class="jiathis_button_tqq" title="分享到腾讯微博"><span class="jiathis_txt jtico jtico_tqq"></span></a> <a class="jiathis_button_weixin" title="分享到微信"><span class="jiathis_txt jtico jtico_weixin"></span></a> </div>
+      <script type="text/javascript" >
+    var jiathis_config = {
+        summary: "",
+        shortUrl: false,
+        hideMore: true
+    }
+</script> 
+      <script type="text/javascript" src="http:/v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+      </p>
+    </div>
+  </div>
+  <!-- footer end --> 
+  
+  <!----> 
+</div>
+<!-- wrap end -->
+
+</body>
+<script type="text/javascript" src="/skin/js/jquery-1.7.min.js" language="javascript"></script>
+<script type="text/javascript" src="/skin/js/jquery.SuperSlide.js" language="javascript"></script>
+<script type="text/javascript" src="/skin/js/index.js" language="javascript"></script>
+<script language="JavaScript">      function click() { if (event.button == 2) {  } } document.onmousedown = click </script>
+<script type="text/javascript">
+        $(".aa").click(function () {
+            var a = $(this).attr("id");
+            alert(a);
+        })
+        function SubKey() {
+            var s = $("#tkey").val();
+            if (s == "") {
+                alert("请输入关键字");
+                return;
+            }
+
+            location.href = "/Search.aspx?key=" + s;
+        }
+        function enterHandler(event) {
+
+            var keynum;
+            if (window.event) / IE
+            {
+                keynum = window.event.keyCode
+            }
+            else {
+
+                if (event.which) / Netscape/Firefox/Opera
+                {
+                    keynum = event.which
+                }
+
+                if (keynum == 13) {
+
+                    SubKey();
+                    if (window.event)
+                        window.event.returnValue = false;
+                    else
+                        event.preventDefault(); /for firefox
+                }
+            }
+        }
+</script>
+<!--[if IE 6]>
+<script type="text/javascript">
+ DD_belatedPNG.fix('.png');
+</script>
+<![endif]-->
+</html>

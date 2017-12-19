@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-/W3C/DTD XHTML 1.0 Transitional/EN" "http:/www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http:/www.w3.org/1999/xhtml">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content=""/>
+<meta name="keywords" content="{dede:global.cfg_keywords/}"/>
+<title>{dede:global.cfg_webname/}</title>
+<link href="/skin/css/public.css" rel="stylesheet" type="text/css" />
+<link href="/skin/css/inside.css" rel="stylesheet" type="text/css" />
+<link href="/skin/css/index1.css" rel="stylesheet" type="text/css" />
+<link href="/skin/css/jiathis_share.css" rel="stylesheet" type="text/css">
+
+
+
+
+<script type="text/javascript" src="/skin/js/jquery-1.7.min.js" language="javascript"></script>
+<script type="text/javascript" src="/skin/js/jquery.SuperSlide.js" language="javascript"></script>
+<script type="text/javascript" src="/skin/js/index.js" language="javascript"></script>
+<script src="/skin/js/jquery-rebox.js"></script>
+
+<script type="text/javascript" src="/skin/js/qs_main_products_list.js"></script>
+
+
+</head>
+<body id="zh">
+<!-- wrap -->
+<div class="wrap">
+<!-- header -->
+{dede:include filename="head.htm"/}
+<!-- header end -->
+
+<!-- content -->
+    <!--banner-->
+	{dede:include filename="banner.htm"/}
+	<!--banner end-->
+	<!-- news -->
+	<div class="div_products_bg_info">
+		<div class="div_products_div_info" id="zh_pro" style="opacity: 1; bottom: 0px;">
+			<div class="div_about2" id="zh_pro2" style="opacity: 1; top: 0px;">
+				<div class="div1" id="zh_pro3" style="opacity: 1; left: 0px;">
+				{dede:type}
+				<a href="[field:typelink /]">多伦[field:typename /]系列</a>
+				{/dede:type}
+				</div>
+				<div class="div2 rg">
+				{dede:channel type='son' currentstyle="<a class='active' href='~typelink~'>| ~typename~</a>"}
+				<a href="[field:typelink/]">| [field:typename/] </a>
+				{/dede:channel}
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="div_pro2">
+				<ul>
+					{dede:list row='19'}
+					<li class="div_li_dong" id="gallery[field:id /]" style="opacity: 1; left: 0px;">
+						<div class="div1">
+						<a href="[field:diyi /]"><img src="[field:litpic /]" width="237" height="213" alt="[field:title/]"></a>
+						</div>
+						
+						<div class="div2">
+						<div class="p1">[field:title/]</div>
+						<div class="p2"></div>
+						<div style="display:none">
+						
+						[field:id function='Getimgs(@me,10)' /]
+						
+			             </div>
+						 </div>
+					</li>
+					{/dede:list}
+					
+					<!--<li class="div_li_dong" style="opacity: 1; left: 0px;">
+					<div class="div1">
+					{dede:type}
+					<a href="[field:typelink /]"><img src="/uploads/image/20150417/1429204607.jpg"  alt="更多"></a>
+					{/dede:type}
+					</div>
+					<div class="div2"><div class="p1">更多</div></div>
+					</li>-->
+					
+					<script>
+								{dede:list row='19'}
+								$('#gallery[field:id /]').rebox({ selector: 'a' });
+								{/dede:list}
+				</script>
+					<div class="clear"></div>
+				</ul>
+				
+				<div class="clear"></div>
+			</div>
+		<div class="pagination-wrapper">
+			<div class="pagination">
+			{dede:pagelist listsize='5' listitem='info,index,end,pre,next,pageno'/}
+			</div>
+		</div>
+		</div>
+	</div>
+	<!-- news end -->
+<!-- content end -->
+      
+    <!-- footer -->
+    {dede:include filename="footer.htm"/}
+    <!-- footer end -->
+</div>
+<!-- wrap end -->
+
+</body>
+</html>

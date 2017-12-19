@@ -1,0 +1,3 @@
+INSERT INTO `dede_myppt` VALUES('1','1','3','时尚装饰健康生活','/kuvai_style/images/11-03-11-11-1.jpg','','#');
+INSERT INTO `dede_myppt` VALUES('2','1','2','长期售后','/kuvai_style/images/18-28-25-60-1.jpg','','#');
+INSERT INTO `dede_myppt` VALUES('3','1','1','零风险','/kuvai_style/images/10-46-19-38-1.jpg','hover','#');
